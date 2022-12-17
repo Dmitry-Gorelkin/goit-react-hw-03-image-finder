@@ -7,6 +7,12 @@ import {
 } from './ImageGalleryItem.styled';
 
 export class ImageGalleryItem extends Component {
+  static propTypes = {
+    imgUrl: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    modalUrl: PropTypes.string.isRequired,
+  };
+
   state = {
     isOpenModal: false,
   };
@@ -35,9 +41,3 @@ export class ImageGalleryItem extends Component {
     );
   }
 }
-
-ImageGalleryItem.propTypes = {
-  imgUrl: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  modalUrl: PropTypes.string.isRequired,
-};
