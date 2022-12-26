@@ -4,7 +4,7 @@ import { Button } from './Button/Button';
 import { Container } from './Container/Container';
 import { ImageGallery } from './ImageGallery/ImageGallery';
 import { Searchbar } from './Searchbar/Searchbar';
-import { fhechImage } from './api';
+import { fhechImage } from '../api';
 import { Loader } from './Loader/Loader';
 
 const PER_PAGE = 12;
